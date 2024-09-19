@@ -7,4 +7,8 @@ import { RouterOutlet } from '@angular/router';
   template: '<router-outlet></router-outlet>', // Isso permitirá que as rotas sejam exibidas
   imports: [RouterOutlet]
 })
-export class AppComponent {}
+export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
+}
