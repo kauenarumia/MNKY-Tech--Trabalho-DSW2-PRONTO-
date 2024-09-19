@@ -1,0 +1,132 @@
+/* Reset de margens e altura total */
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+h1{
+    width: 506px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; /* Espaço abaixo do texto */
+
+}
+
+h2{
+    width: 506px;
+    text-align: right;
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; /* Espaço abaixo do texto */
+
+}
+/* Container geral ocupa 100% da altura */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Garante que o container cubra toda a altura da tela */
+}
+
+/* Cabeçalho */
+.header {
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+/* Rodapé */
+.footer {
+    width: 100%;
+    height: 100px;
+    background: black;
+}
+
+/* Conteúdo principal ocupa o espaço restante */
+.main-content {
+    flex-grow: 1; /* Garante que ocupe o espaço restante entre header e footer */
+    background: #6D6C6C;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px; /* Espaçamento interno */
+    box-sizing: border-box;
+}
+
+/* Imagem do produto */
+#mainImage {
+    width: 500px;
+    height: 359px;
+    margin-bottom: 20px; /* Espaço abaixo da imagem */
+}
+
+.product-value{
+    width: 506px;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; /* Espaço abaixo do texto */
+
+}
+
+/* Descrição do produto */
+.product-description {
+    width: 506px;
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px; /* Espaço abaixo do texto */
+}
+
+/* Botão de compra */
+.buy-button {
+    width: 300px;
+    height: 120px;
+    background: #353535;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Espaço acima do botão */
+    position: relative; /* Necessário para posicionar o texto dentro do botão */
+}
+
+.buy-button .buy-text {
+    color: white; /* Texto branco para contraste */
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+/* Estilos para as miniaturas */
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 72px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1); /* Aumenta ligeiramente quando o mouse passa por cima */
+}

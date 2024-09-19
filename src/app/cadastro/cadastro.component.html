@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Notebook Gamer Acer Nitro V15</title>
+    <link rel="stylesheet" href="cadastro.component.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>MNKY Tech</h1>
+            <h2>Adentre a selva!</h2>
+        </div>
+        
+        <div class="main-content">
+            <!-- Imagem principal -->
+            <img id="mainImage" src="assets/img/notebook.png" alt="Notebook Gamer Acer Nitro V15">
+
+            <!-- Miniaturas -->
+            <div class="thumbnails">
+                <img src="assets/img/notebook2.png" alt="Miniatura 1" class="thumbnail" onclick="changeImage(this)">
+                <img src="assets/img/notebook3.png" alt="Miniatura 2" class="thumbnail" onclick="changeImage(this)">
+                <img src="assets/img/notebook.png" alt="Miniatura 3" class="thumbnail" onclick="changeImage(this)">
+            </div>
+
+            <div class="product-value">
+                R$: 4.500,00
+            </div>    
+
+            <div class="product-description">
+                Notebook Gamer Acer Nitro V15 Intel Core I5-13420H 8GB RAM 512GB SSD NVIDIA RTX 3050
+            </div>
+
+         
+        <div class="buy-button">
+            <button (click)="irParaOutraTela()">Comprar Agora</button>
+
+          </div>
+
+
+          
+        </div>
+    </div>
+
+    <!-- Script para trocar a imagem -->
+    <script>
+        function changeImage(element) {
+            var mainImage = document.getElementById('mainImage');
+            mainImage.src = element.src; // Troca a imagem principal pela miniatura clicada
+        }
+    </script>
+</body>
+</html>
